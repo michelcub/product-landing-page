@@ -3,8 +3,13 @@
     for example: list elements come with a little circle that nobody uses anymore.
  */
 ul{margin: 0; padding:0;}
-ul li{list-style: none;}
-
+ul li{
+    margin-left: 20px;
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
 /* 
     BEHAVIORAL STYLES
     for example: .horizontal, .container, .p-1 (for padding one)
@@ -18,3 +23,82 @@ ul li{list-style: none;}
     SPECIFIC TO YOUR WEBSITE 
     The more senior you become the less you have specific styles
 */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 1.7em;
+    margin-left: 2em;
+}
+.menu{
+    margin-right: 3em;
+    
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 1.5em;
+}
+.directorio{
+    color: gray;
+    width: 100vw;
+}
+.body{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+}
+body-rigth{
+   width: 100%; 
+}
+.img-top{
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    
+    background-image: url(./assets/product1.jpeg);
+    background-size: cover;
+}
+.img-down{
+    
+    margin-top: 15px;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 15px;
+    
+}
+.img-down-1{
+    background-size: cover;
+    background-image: url(./assets/product1.jpeg);
+}
+.img-down-2{
+    background-size: cover;
+    background-image: url(./assets/product2.jpeg);
+}
+.img-down-3{
+    background-size: cover;
+    background-position: center;
+    background-image: url(./assets/product3.jpeg);
+}
+h1{
+    font-size: 2.5em;
+}
+.price{
+    font-size: 2em;
+}
+
+.buttom{
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
